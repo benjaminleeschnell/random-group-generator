@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Random Group Generator</title>
+    
+</head>
+<body>
+    <div id="header">
+        <img src="./img/southern-logo-on-brand-green-background-horizontal.png">
+        <h1>Random Group Generator</h1>
+    </div>
+    <div class="main">
+    <div id="box">
+    <form id="groupForm">
+        <label for="names">Student names (one per line):</label>
+        <textarea id="names" rows="10" cols="30"></textarea>
+        <div class="group-number">
+        <label for="groupCount">Number of groups:</label>
+        <input type="number" id="groupCount" min="1" value="1">
+        </div>
+        <div class="buttons">
+        <button type="button" onclick="createGroups()">Create Groups</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+        </div>
+        </div>
+    </form>
+    <div id="output"></div>
+    </div>
+    </div>
+    <div id="extraButtons">
+        <button id="full" type="button" onclick="hideShowNames()">Full Screen</button>
+        <button id="plus" type="button" onclick="increaseNameFont()">Font +</button>
+        <button id="minus" type="button" onclick="decreaseNameFont()">Font -</button>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
